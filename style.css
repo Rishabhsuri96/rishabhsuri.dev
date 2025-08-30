@@ -1,0 +1,179 @@
+/* Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 10px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  color: #121212;
+}
+
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+  color: #f0f0f0;
+}
+
+p, li, a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+/* Headings font size */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #333;
+  position: relative;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: rgb(219, 219, 219);
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #006be5;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #004ba1;
+}
+
+/* Dark mode navbar */
+.dark-mode #navbar {
+  background-color: #221a00;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.dark-mode #navbar a {
+  color: #ff9800;
+}
+
+.dark-mode #navbar a:hover {
+  color: #e68900;
+}
+
+/* Sections */
+section {
+  margin-top: 30px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark mode sections */
+.dark-mode section {
+  background: #1e1e1e;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #0077ff;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #005fcc;
+}
+
+/* Dark mode buttons */
+.dark-mode .resume-btn {
+  background: #ff9800;
+}
+
+.dark-mode .resume-btn:hover {
+  background: #e68900;
+}
+
+/* Dark mode overall */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  display: none; /* hidden initially */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #005fcc;
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
